@@ -32,6 +32,18 @@ body { font-family: 'Chakra Petch', sans-serif; background-color: var(--bg-color
 .hero-content { position: relative; z-index: 2; width: auto; max-width: 50%; } 
 .hero-title { font-size: 2.5rem; font-weight: 700; margin: 0 0 10px 0; line-height: 1.2; } 
 .hero-subtitle { color: var(--text-muted); margin: 0; font-weight: 500; } 
+.house-image {
+  position: absolute;
+  right: -5%;
+  bottom: -10%;
+  height: 110%;
+  width: auto;
+  z-index: 1;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+  pointer-events: none;
+}
 
 /* Energy Flow Widget Styling */
 .energy-flow-container {
@@ -244,6 +256,7 @@ body { font-family: 'Chakra Petch', sans-serif; background-color: var(--bg-color
     padding: 30px 25px;
   } 
   .hero-content { width: 100%; margin-bottom: 20px; max-width: 100%; } 
+  .house-image { opacity: 0.3; right: -5%; height: 130%; }
 } 
 
 @media (max-width: 600px) { 
@@ -258,6 +271,7 @@ body { font-family: 'Chakra Petch', sans-serif; background-color: var(--bg-color
     width: 100%;
     max-width: 100%;
   }
+  .house-image { opacity: 0.15; right: -15%; height: 120%; }
   @media (max-width: 350px) {
     .flow-widget {
       transform: scale(0.9);
